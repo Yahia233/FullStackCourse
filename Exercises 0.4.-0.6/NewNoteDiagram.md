@@ -5,7 +5,7 @@ sequenceDiagram
     Note over browser: Creating a new note and save it via the button
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    Note right of server: Server processes the new note and saves it
+    Note right of server: Server processes and save the new note
     server-->>browser: Redirect to https://studies.cs.helsinki.fi/exampleapp/notes
     deactivate server
 
